@@ -5,7 +5,7 @@ El usuario escribe una pregunta en español (por ejemplo: *"¿Cuál es el tráfi
 
 ---
 
-## 🏗️Arquitectura General del Proyecto
+## Arquitectura General del Proyecto
 
 El proyecto sigue una arquitectura tipo **Medallion** con dos capas principales y un agente inteligente para análisis dinámico.
 
@@ -30,12 +30,12 @@ El proyecto sigue una arquitectura tipo **Medallion** con dos capas principales 
             │ Pregunta → SQL → Result  │
             └──────────────────────────┘
 
-### 🟤 Bronze (trafico_amg)
+### Bronze (trafico_amg)
 - Contiene los datos originales del CSV.
 - Todos los tipos vienen como texto.
 - Puede contener errores o valores fuera de formato.
 
-### ⚪ Silver (trafico_amg_clean)
+### Silver (trafico_amg_clean)
 - Campos convertidos correctamente a:
   - `numeric`  
   - `timestamp`  
@@ -43,7 +43,7 @@ El proyecto sigue una arquitectura tipo **Medallion** con dos capas principales 
 - Filas inválidas eliminadas.
 - Lista para análisis real.
 
-### 🤖 Agente LLM-SQL
+### Agente LLM-SQL
 - Genera SQL basada en lenguaje natural.
 - Ejecuta consultas automáticas.
 - Responde al usuario con tablas de resultados.
@@ -51,7 +51,7 @@ El proyecto sigue una arquitectura tipo **Medallion** con dos capas principales 
 ---
 
 
-## 📥 Carga del Dataset (Bronze Layer)
+## Carga del Dataset (Bronze Layer)
 
 El dataset original contenía alrededor de **3.9 millones de registros de tráfico**, cada uno con:
 
