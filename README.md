@@ -361,11 +361,11 @@ Permite identificar cuáles son las horas con mayor intensidad de tráfico prome
 
 Tráfico promedio por día de la semana
 
-Pregunta (usuario):
+**Pregunta (usuario):**
 
-¿Qué día de la semana tiene mayor tráfico promedio?
+>¿Qué día de la semana tiene mayor tráfico promedio?
 
-SQL generada:
+**SQL generada:**
 
 SELECT
     TO_CHAR(dtime, 'Day') AS dia_semana,
@@ -380,11 +380,11 @@ Permite encontrar qué días (lunes, martes, etc.) presentan mayor congestión e
 
 Zonas de mayor congestión (heatmap simplificado)
 
-Pregunta (usuario):
+**Pregunta (usuario):**
 
-¿Cuáles son las zonas con mayor tráfico promedio?
+>¿Cuáles son las zonas con mayor tráfico promedio?
 
-SQL generada:
+**SQL generada:**
 
 SELECT
     ROUND(lat, 3) AS grid_lat,
@@ -402,11 +402,11 @@ Agrupa puntos cercanos (por coordenadas) y devuelve las “celdas” con mayor t
 
 Puntos con mayor tráfico rojo
 
-Pregunta (usuario):
+**Pregunta (usuario):**
 
-¿En qué coordenadas se presenta más tráfico rojo?
+>¿En qué coordenadas se presenta más tráfico rojo?
 
-SQL generada:
+**SQL generada:**
 
 SELECT
     lat,
@@ -424,11 +424,11 @@ Identifica las coordenadas donde más veces se detecta el color predominante “
 
 Distribución por tipo de tráfico (diffuse_logic_traffic)
 
-Pregunta (usuario):
+**Pregunta (usuario):**
 
-¿Cómo se reparte el tráfico por tipo de diffuse_logic_traffic?
+>¿Cómo se reparte el tráfico por tipo de diffuse_logic_traffic?
 
-SQL generada:
+**SQL generada:**
 
 SELECT
     diffuse_logic_traffic,
@@ -441,13 +441,13 @@ ORDER BY registros DESC;
 Interpretación:
 Muestra qué categorías lógicas de tráfico (según el campo diffuse_logic_traffic) son más frecuentes en el dataset.
 
-5.6 (Opcional) Tendencia mensual del tráfico
+(Opcional) Tendencia mensual del tráfico
 
-Pregunta (usuario):
+**Pregunta (usuario):**
 
-¿Cómo ha cambiado el tráfico promedio por mes?
+>¿Cómo ha cambiado el tráfico promedio por mes?
 
-SQL generada:
+**SQL generada:**
 
 SELECT
     DATE_TRUNC('month', dtime) AS mes,
