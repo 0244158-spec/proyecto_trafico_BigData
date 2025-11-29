@@ -331,7 +331,7 @@ Todo en lenguaje natural → SQL automático → ejecución real en PostgreSQL.
 
 ---
 
-## 📊 Análisis realizados con el agente LLM-SQL
+## Análisis realizados con el agente LLM-SQL
  
 A continuación se describen los análisis implementados, cada uno con:
 
