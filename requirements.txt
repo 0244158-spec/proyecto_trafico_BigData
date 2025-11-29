@@ -1,0 +1,5 @@
+openai
+python-dotenv
+psycopg2-binary
+tabulate
+pandas
