@@ -50,13 +50,6 @@ El proyecto sigue una arquitectura tipo **Medallion** con dos capas principales 
 
 ---
 
-Esta arquitectura cumple los requisitos del profesor:
-- uso de grandes volúmenes de datos,
-- ETL,
-- arquitectura en capas,
-- y un sistema inteligente de análisis.
-
----
 
 ## 📥 Carga del Dataset (Bronze Layer)
 
@@ -348,7 +341,7 @@ Todo en lenguaje natural → SQL automático → ejecución real en PostgreSQL.
 
 ---
 
-## 📊 5. Análisis realizados con el agente LLM-SQL
+## 📊 Análisis realizados con el agente LLM-SQL
 
 El profesor solicita al menos **5 tipos de análisis diferentes** utilizando esta tecnología.  
 A continuación se describen los análisis implementados, cada uno con:
@@ -359,7 +352,7 @@ A continuación se describen los análisis implementados, cada uno con:
 
 ---
 
-### 5.1 Tráfico promedio por hora del día
+### Tráfico promedio por hora del día
 
 **Pregunta (usuario):**
 
@@ -378,7 +371,7 @@ ORDER BY hora;
 Interpretación:
 Permite identificar cuáles son las horas con mayor intensidad de tráfico promedio en toda la ciudad.
 
-5.2 Tráfico promedio por día de la semana
+Tráfico promedio por día de la semana
 
 Pregunta (usuario):
 
@@ -397,7 +390,7 @@ ORDER BY trafico_promedio DESC;
 Interpretación:
 Permite encontrar qué días (lunes, martes, etc.) presentan mayor congestión en promedio.
 
-5.3 Zonas de mayor congestión (heatmap simplificado)
+Zonas de mayor congestión (heatmap simplificado)
 
 Pregunta (usuario):
 
@@ -419,7 +412,7 @@ LIMIT 50;
 Interpretación:
 Agrupa puntos cercanos (por coordenadas) y devuelve las “celdas” con mayor tráfico promedio, útil para construir un mapa de calor.
 
-5.4 Puntos con mayor tráfico rojo
+Puntos con mayor tráfico rojo
 
 Pregunta (usuario):
 
@@ -441,7 +434,7 @@ LIMIT 20;
 Interpretación:
 Identifica las coordenadas donde más veces se detecta el color predominante “red”, asociado a alto tráfico o congestión.
 
-5.5 Distribución por tipo de tráfico (diffuse_logic_traffic)
+Distribución por tipo de tráfico (diffuse_logic_traffic)
 
 Pregunta (usuario):
 
