@@ -332,8 +332,7 @@ Todo en lenguaje natural → SQL automático → ejecución real en PostgreSQL.
 ---
 
 ## 📊 Análisis realizados con el agente LLM-SQL
-
-El profesor solicita al menos **5 tipos de análisis diferentes** utilizando esta tecnología.  
+ 
 A continuación se describen los análisis implementados, cada uno con:
 
 - Pregunta en lenguaje natural  
@@ -350,7 +349,6 @@ A continuación se describen los análisis implementados, cada uno con:
 
 **SQL generada:**
 
-```sql
 SELECT
     EXTRACT(HOUR FROM dtime) AS hora,
     AVG(exponential_color_weighting) AS trafico_promedio
