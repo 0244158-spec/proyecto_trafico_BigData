@@ -311,21 +311,21 @@ hora | trafico_promedio
 3    | 508.29
 ...
 
-¿Qué permite este agente?
+## ¿Qué permite este agente?
 
 El usuario puede preguntar:
 
-“¿Qué tráfico hay en un punto (lat,long)?”
+>“¿Qué tráfico hay en un punto (lat,long)?”
 
-“¿Qué hora del día tiene más tráfico?”
+>“¿Qué hora del día tiene más tráfico?”
 
-“¿Cuál es el color predominante más común?”
+>“¿Cuál es el color predominante más común?”
 
-“Dame un histograma por hora”
+>“Dame un histograma por hora”
 
-“¿Dónde se registran valores anómalos?”
+>“¿Dónde se registran valores anómalos?”
 
-“¿Qué zonas tienen tráfico por arriba del percentil 90?”
+>“¿Qué zonas tienen tráfico por arriba del percentil 90?”
 
 Todo en lenguaje natural → SQL automático → ejecución real en PostgreSQL.
 
